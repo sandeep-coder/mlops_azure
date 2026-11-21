@@ -14,4 +14,4 @@ python get_data.py
 python train.py
 ```
 
-<!-- TODO 4: add one line below saying who you are, e.g. "Maintained by Asha". -->
+<!-- TODO 4: add one line below saying who you are, e.g. "Maintained by Sandeep Ravula". -->
