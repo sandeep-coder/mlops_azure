@@ -4,7 +4,7 @@ Run get_data.py first to create data/churn.csv.
 """
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score,classification_report
 from sklearn.model_selection import train_test_split
 
 df = pd.read_csv("data/churn.csv")
@@ -21,6 +21,7 @@ model.fit(X_train, y_train)
 
 predictions = model.predict(X_test)
 print(f"Accuracy: {accuracy_score(y_test, predictions):.3f}")
+print(classification_report(y_test, predictions))
 
 # TODO 6 (on the branch add-report): print a fuller report.
 #   1. Add `classification_report` to the sklearn.metrics import above.
